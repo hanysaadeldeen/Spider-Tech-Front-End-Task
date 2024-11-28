@@ -6,12 +6,11 @@
       div.p-8.flex.justify-center.items-center
         section(class="text-center ")
           h1(class="md:!leading-[50px] lg:!leading-[66px]  text-[44px] md:text-3xl lg:text-4xl font-medium mb-6")
-            | Enhancing everything related to women's charm and allure is our mission.
+            |{{$t('heroTitle')}}
           button(class="bg-blue-100 text-black text-xl px-6 py-2 rounded-full hover:bg-blue-200 transition ")
-            | Contact us
+            | {{$t('contact')}}
       div(class="")
         img(src='../../assets/images/image 25.svg'  loading="lazy" alt="image 25.svg"   width="500" height="300" class='w-full object-cover  transition ') 
-
 </template>
 
 <script setup lang="ts"></script>
