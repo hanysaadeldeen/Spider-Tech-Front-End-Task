@@ -1,0 +1,13 @@
+{
+  "direction": "ltr",
+  "name": "English",
+  "language": "English",
+  "code": "en-Us",
+  "logo": "logo",
+
+  "home": "Home",
+  "about": "About Us",
+  "services": "Our Services",
+  "brands": "Partner Brands",
+  "contact": "Contact Us"
+}

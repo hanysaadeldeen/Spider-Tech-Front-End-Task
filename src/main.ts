@@ -2,4 +2,21 @@ import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/main.css";
 
-createApp(App).mount("#app");
+import { createI18n } from "vue-i18n";
+import en from "./language/en-Us.json";
+import ar from "./language/ar-Ar.json";
+
+const app = createApp(App);
+
+const i18n = createI18n({
+  locale: "en",
+  fallbackLocale: "ar",
+  messages: {
+    en,
+    ar,
+  },
+});
+
+app.use(i18n);
+
+app.mount("#app");
