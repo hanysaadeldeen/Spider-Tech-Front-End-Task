@@ -3,12 +3,13 @@
     <AppHeader />
     <HeroSection />
     <AboutSection />
+    <AppFooter />
   </div>
 </template>
 
 <script setup lang="ts">
 import AppHeader from "./components/layouts/AppHeader.vue";
-// import AppFooter from "./components/layouts/AppFooter.vue";
+import AppFooter from "./components/layouts/AppFooter.vue";
 import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 import HeroSection from "./components/Section/HeroSection.vue";
