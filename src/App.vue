@@ -3,6 +3,7 @@
     <AppHeader />
     <HeroSection />
     <AboutSection />
+    <ProductsSection />
     <AppFooter />
   </div>
 </template>
@@ -14,6 +15,7 @@ import { useI18n } from "vue-i18n";
 import { computed } from "vue";
 import HeroSection from "./components/Section/HeroSection.vue";
 import AboutSection from "./components/Section/AboutSection.vue";
+import ProductsSection from "./components/Section/ProductsSection.vue";
 const { locale } = useI18n();
 const direction = computed(() => {
   return locale.value === "ar" ? "rtl" : "ltr";
