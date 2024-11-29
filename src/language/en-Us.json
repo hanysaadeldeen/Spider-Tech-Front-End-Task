@@ -11,5 +11,29 @@
   "brands": "Partner Brands",
   "contact": "Contact Us",
 
-  "heroTitle": "Enhancing everything related to women's charm and allure is our mission."
+  "heroTitle": "Enhancing everything related to women's charm and allure is our mission.",
+
+  "information": {
+    "title": "Information",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Our Services",
+    "products": "Our Products"
+  },
+  "support": {
+    "title": "Support",
+    "faqs": "FAQs",
+    "terms": "Terms & Conditions",
+    "privacy": "Privacy Policy"
+  },
+  "contacts": {
+    "title": "Contacts"
+  },
+  "subscribe": {
+    "title": "Subscribe For More",
+    "placeholder": "Enter your email",
+    "button": "SEND"
+  },
+  "Rights": " All rights reserved",
+  "RightsHistory": "2010"
 }
