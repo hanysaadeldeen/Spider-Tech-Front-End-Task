@@ -9,8 +9,7 @@
             h3(class="text-4xl font-bold text-black mb-4") {{$t("aboutValue")}}
             ul(class="space-y-4")
               li(v-for='(item, index) in about?.values' :key='index' class="value-item") {{item.title}}
-    div(v-else class="flex items-center justify-center h-48") 
-      div(class="animate-spin rounded-full h-16 w-16 border-t-2 border-b-2 border-gray-900") 
+ 
 </template>
 
 <script setup lang="ts">
