@@ -25,7 +25,7 @@
               p(class='links') 0096 6444 673 56
               p(class='links') support@womansecrets.com
               div.flex.gap-2.items-center
-                img(src='../../assets/images/instagram.svg' alt='instagram' loading="lazy"  width="24" height="24")
+                img(src='../../assets/images/twitter.svg' alt='twitter' loading="lazy" width="24" height="24")
                 img(src='../../assets/images/instagram.svg' alt='instagram' loading="lazy" width="24" height="24")
                 img(src='../../assets/images/facebook.svg' alt='facebook' loading="lazy" width="24" height="24") 
         div(class='flex flex-col gap-3').justify-center(class='md:justify-start')

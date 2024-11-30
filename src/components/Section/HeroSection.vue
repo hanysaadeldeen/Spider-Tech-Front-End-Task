@@ -1,5 +1,5 @@
 <template lang="pug">
-  div(class='pt-[176px]')
+  div(class='pt-[110px] md:pt-[176px] ')
     div(class='grid grid-cols-1 md:grid-cols-3 ')
       div
         img(src='../../assets/images/image 26.svg' loading="lazy" alt="hero3"  class='w-full object-cover' width="500" height="300") 
