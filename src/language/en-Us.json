@@ -6,12 +6,10 @@
   "logo": "logo",
 
   "home": "Home",
-  "about": "About Us",
+  "aboutValue": "Values",
   "services": "Our Services",
   "brands": "Partner Brands",
   "contact": "Contact Us",
-
-  "heroTitle": "Enhancing everything related to women's charm and allure is our mission.",
 
   "information": {
     "title": "Information",

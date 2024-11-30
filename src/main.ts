@@ -1,13 +1,14 @@
 import { createApp } from "vue";
 import App from "./App.vue";
 import "./assets/main.css";
-
+import { createPinia } from "pinia";
 import { createI18n } from "vue-i18n";
 import en from "./language/en-Us.json";
 import ar from "./language/ar-Ar.json";
 import ProductsContainer from "./components/util/ProductsContainer.vue";
 
 const app = createApp(App);
+const pinia = createPinia();
 app.component("ProductsContainer", ProductsContainer);
 
 import "swiper/css";
@@ -23,5 +24,6 @@ const i18n = createI18n({
 });
 
 app.use(i18n);
+app.use(pinia);
 
 app.mount("#app");

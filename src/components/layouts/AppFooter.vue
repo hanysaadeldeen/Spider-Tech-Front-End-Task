@@ -1,5 +1,5 @@
 <template lang="pug">
-  footer(class="bg-[#DEEBF6]")
+  footer(class="bg-[#DEEBF6]" v-if='footer?.logo')
     div.px-6.py-10.container.mx-auto
       div(class='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5 ')
         div.flex.flex-wrap.gap-8.justify-center(class='md:justify-start')
@@ -17,17 +17,20 @@
               p(class='links')  {{$t("support.terms")}}
               p(class='links') {{$t("support.privacy")}}
         div.flex.justify-start.justify-center(class='lg:justify-start')
-            img(src='../../assets/images/Logo.svg' :alt="$t('logo')" loading="lazy" width="200" height="60")
+            img(:src='footer?.logo' :alt="$t('logo')" loading="lazy" width="200" height="60")
         div.flex.gap-8.justify-center(class='md:justify-start')
           div(class='flex flex-col gap-3')
             h2(class='text-2xl font-medium text-[#020203]') {{$t("contacts.title")}}
             div(class='space-y-1')
-              p(class='links') 0096 6444 673 56
-              p(class='links') support@womansecrets.com
+              p(class='links') {{footer?.phone}}
+              p(class='links') {{footer?.email}}
               div.flex.gap-2.items-center
-                img(src='../../assets/images/twitter.svg' alt='twitter' loading="lazy" width="24" height="24")
-                img(src='../../assets/images/instagram.svg' alt='instagram' loading="lazy" width="24" height="24")
-                img(src='../../assets/images/facebook.svg' alt='facebook' loading="lazy" width="24" height="24") 
+                a(:href="footer?.socials?.twitter" target="_blank")
+                  img(src='../../assets/images/twitter.svg' alt='twitter' loading="lazy" width="24" height="24")
+                a(:href="footer?.socials?.instagram" target="_blank") 
+                  img(src='../../assets/images/instagram.svg' alt='instagram' loading="lazy" width="24" height="24")
+                a(:href="footer?.socials?.facebook" target="_blank") 
+                  img(src='../../assets/images/facebook.svg' alt='facebook' loading="lazy" width="24" height="24") 
         div(class='flex flex-col gap-3').justify-center(class='md:justify-start')
             h2(class='text-2xl font-medium text-[#020203] text-center md:text-start') {{$t("subscribe.title")}}
             div(class=' flex flex-col  items-center md:items-start gap-3')
@@ -40,7 +43,15 @@
 
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { storeToRefs } from "pinia";
+import HomeStore from "../../stores/homeData";
+import { watch } from "vue";
+
+const store = HomeStore();
+
+const { footer } = storeToRefs(store);
+</script>
 
 <style scoped>
 .links {
