@@ -11,9 +11,9 @@ const app = createApp(App);
 const pinia = createPinia();
 app.component("ProductsContainer", ProductsContainer);
 
-import "swiper/css";
-import "swiper/css/navigation";
-import "swiper/css/pagination";
+// import "swiper/css";
+// import "swiper/css/navigation";
+// import "swiper/css/pagination";
 const i18n = createI18n({
   locale: "en",
   fallbackLocale: "ar",

@@ -46,7 +46,6 @@
 <script setup lang="ts">
 import { storeToRefs } from "pinia";
 import HomeStore from "../../stores/homeData";
-import { watch } from "vue";
 
 const store = HomeStore();
 
