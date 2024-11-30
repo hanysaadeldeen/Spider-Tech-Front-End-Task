@@ -102,12 +102,12 @@ const Products: Product[] = [
   {
     id: 1,
     name: "folia transferowa silver 01",
-    image: "/src/assets/images/folia-transferowa-silver-01.webp.svg",
+    image: "../../assets/images/folia-transferowa-silver-01.webp.svg",
   },
   {
     id: 2,
     name: "new duo sugar lemon",
-    image: "/src/assets/images/new-duo-sugar-lemon.webp.svg",
+    image: "/assets/images/new-duo-sugar-lemon.webp.svg",
   },
   {
     id: 3,
