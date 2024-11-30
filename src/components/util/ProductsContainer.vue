@@ -100,27 +100,27 @@ interface Product {
 }
 const Products: Product[] = [
   {
-    id: 1,
+    id: 0,
     name: "folia transferowa silver 01",
     image: "../../assets/images/folia-transferowa-silver-01.webp.svg",
   },
   {
-    id: 2,
+    id: 1,
     name: "new duo sugar lemon",
     image: "/assets/images/new-duo-sugar-lemon.webp.svg",
   },
   {
-    id: 3,
+    id: 2,
     name: "new duo gabki do ombre",
     image: "/src/assets/images/new-duo-gabki-do-ombre.webp.svg",
   },
   {
-    id: 4,
+    id: 3,
     name: "paint gel 5g 063 barbie",
     image: "/src/assets/images/paint-gel-5g-063-barbie.webp.svg",
   },
   {
-    id: 5,
+    id: 4,
     name: "folia transferowa silver 01",
     image: "/src/assets/images/folia-transferowa-silver-01.webp.svg",
   },
