@@ -124,6 +124,16 @@ const Products: Product[] = [
     name: "folia transferowa silver 01",
     image: "/src/assets/images/folia-transferowa-silver-01.webp.svg",
   },
+   {
+    id: 5,
+    name: "new duo sugar lemon",
+    image: "/src/assets/images/folia-transferowa-silver-01.webp.svg",
+  },
+   {
+    id: 6,
+    name: "paint gel 5g 063 barbie",
+    image: "/src/assets/images/folia-transferowa-silver-01.webp.svg",
+  },
 ];
 
 // Swiper Config
